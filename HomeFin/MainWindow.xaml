@@ -1,0 +1,40 @@
+﻿<Window x:Class="HomeFin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeFin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="Accounts" Grid.Row="1" Content="User Accounts" Width="120" HorizontalAlignment="Center"
+                Margin="111,8,111,0"
+                Click="Accounts_Click" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <Button Name="SpecialAccounts" Grid.Row="2" Grid.Column="1" Content="Special Accounts" Width="120" HorizontalAlignment="Center"
+                Margin="111,8"
+                Click="SpecialAccounts_Click" />
+        <Button Name="Operations" Grid.Row="3" Grid.Column="1" Content="Operations" HorizontalAlignment="Center" Width="120"
+                Margin="111,8"
+                Click="Operations_Click" />
+        <Button Name="Currencies" Grid.Row="4" Grid.Column="1" Content="Currencies" HorizontalAlignment="Center" Width="120"
+                Margin="111,8"
+                Click="Currencies_Click" />
+        <!--Button Name="Reset" Grid.Row="5" Grid.Column="1" Content="Reset" HorizontalAlignment="Center" Width="120"
+                Margin="8"
+                Click="Reset_Click" /-->
+
+    </Grid>
+</Window>
